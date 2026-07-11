@@ -74,17 +74,22 @@ self.play(FadeIn(blur))
 
 ---
 
-## Creatures
+---
 
-| Class | Status | Advice |
-|-------|--------|--------|
-| `CustomCreature` | ✅ Keep | SVG stick figure; look-at + blink helpers |
-| Asset | — | `assets/creature_hands_up_eyes_mouth.svg` |
+## Creatures (multi-SVG, flexible)
 
-```python
-from my_manim_lib import CustomCreature
-c = CustomCreature().scale(2)
-self.play(c.get_look_animation(some_mobject.get_center()))
-close, open_ = c.get_blink_animation()
-self.play(close); self.play(open_)
-```
+| API | Status | Notes |
+|-----|--------|-------|
+| `CustomCreature(mode=...)` | ✅ | default `hands_up` |
+| `list_creature_svgs()` | ✅ | lists `assets/creatures/*.svg` |
+| `BaseCreature` | ✅ | subclass if you need a new character family |
+| SVG folder | — | `my_manim_lib/assets/creatures/` |
+| Authoring guide | — | `my_manim_lib/creatures/README.md` |
+
+### নতুন SVG যোগ (৪০–৫০টা পর্যন্ত)
+1. ফাইল: `assets/creatures/<mode>.svg`
+2. Part ids: `head`, `left_eye`, `right_eye`, `left_pupil`, `right_pupil`, `left_eyelid`, `right_eyelid`, `mouth`, …
+3. ব্যবহার: `CustomCreature(mode="<mode>")` — নতুন Python class লাগে না
+
+Legacy note: পুরনো hard-coded index binding সরানো হয়েছে; id + fallback order ব্যবহার হয়।
+

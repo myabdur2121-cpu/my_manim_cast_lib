@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="my_manim_lib",
-    version="0.2.1",
-    description="Custom Manim animations, mobjects, and creatures",
+    version="0.3.0",
+    description="Custom Manim animations, mobjects, and multi-SVG creatures",
     long_description=open("README.md", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     packages=find_packages(),
@@ -12,6 +12,8 @@ setup(
         "my_manim_lib": [
             "STATUS.md",
             "assets/*.svg",
+            "assets/creatures/*.svg",
+            "creatures/README.md",
         ]
     },
     install_requires=[

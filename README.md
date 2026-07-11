@@ -83,3 +83,22 @@ close, open_ = creature.get_blink_animation()
 self.play(close)
 self.play(open_)
 ```
+
+## Creatures (many SVGs)
+
+SVGs live in ``my_manim_lib/assets/creatures/``.
+
+```python
+from my_manim_lib import CustomCreature, list_creature_svgs
+print(list_creature_svgs())
+c = CustomCreature(mode="hands_up")
+```
+
+Add a new pose later:
+1. Put ``my_pose.svg`` in ``assets/creatures/``
+2. Use standard element ``id``s (see ``my_manim_lib/creatures/README.md``)
+3. ``CustomCreature(mode="my_pose")`` — no new class required
+
+```bash
+manim -ql examples/creature_demo.py CreatureDemo
+```

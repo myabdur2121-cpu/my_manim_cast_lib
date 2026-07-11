@@ -2,11 +2,12 @@
 my_manim_lib
 ============
 
-Custom Manim animations & mobjects.
+Custom Manim animations, mobjects & SVG creatures.
 
-📌 কোন ক্লাস recommended / legacy — দেখো:
-   my_manim_lib/STATUS.md
-   (অথবা: import my_manim_lib; print(my_manim_lib.__status__))
+📌 Status notes: my_manim_lib/STATUS.md
+   import my_manim_lib; print(my_manim_lib.__status__)
+
+📌 Creature SVG guide: my_manim_lib/creatures/README.md
 """
 
 from .animations import *
@@ -20,17 +21,18 @@ RECOMMENDED animations:
   TrueSpiralInSubmobs, ParticleDissolve, SnappyPopIn,
   FlySwap, CreateWithFlash, WordByWordCaption
 
-LEGACY (still available, prefer recommended instead):
-  ElasticSnapIn          -> use ElasticSnapInOpacity
-  VectorFieldWarp        -> use VectorFieldWarpIn
-  StreamAlongPath        -> use StreamAlongPathIMG
+LEGACY (still available):
+  ElasticSnapIn -> ElasticSnapInOpacity
+  VectorFieldWarp -> VectorFieldWarpIn
+  StreamAlongPath -> StreamAlongPathIMG
 
-MOBjects: GlowLine, GlowDot, Glow, BrightGlowDot, MultiBrightGlow,
-  SmoothCross, SplitTex, SplitText, ScreenBlur, TrueGaussianBlur2
+MOBjects: Glow*, BrightGlow*, SmoothCross, SplitTex/Text,
+  ScreenBlur, TrueGaussianBlur2
 
-Creatures:
-  CustomCreature  (SVG: assets/creature_hands_up_eyes_mouth.svg)
-  helpers: get_look_animation, get_look_forward_animation, get_blink_animation
+Creatures (flexible multi-SVG):
+  CustomCreature(mode="hands_up")
+  list_creature_svgs()  # see assets/creatures/*.svg
+  Add new pose: drop SVG with standard ids into assets/creatures/
 
-Full notes: my_manim_lib/STATUS.md
+Full notes: STATUS.md + creatures/README.md
 """
