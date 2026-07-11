@@ -1,2 +1,3 @@
 include README.md
 include my_manim_lib/STATUS.md
+recursive-include my_manim_lib/assets *.svg

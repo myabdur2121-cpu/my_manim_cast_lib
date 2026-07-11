@@ -41,6 +41,7 @@ class Demo(Scene):
 
 - **Animations:** `ElasticSnapInOpacity`, `VectorFieldWarpIn`, `StreamAlongPathIMG`, `FlyIntoPlaceholder`, `ReplaceFlyIntoPlaceholder`, `TrueSpiralInSubmobs`, `ParticleDissolve`, `SnappyPopIn`, `FlySwap`, `CreateWithFlash`, `WordByWordCaption`
 - **Mobjects:** `GlowLine`, `GlowDot`, `Glow`, `BrightGlowDot`, `MultiBrightGlow`, `SmoothCross`, `SplitTex`, `SplitText`, `ScreenBlur`, `TrueGaussianBlur2`
+- **Creatures:** `CustomCreature` (look + blink; SVG in `assets/`)
 
 ### Legacy (মুছে ফেলা হয়নি — পুরনো কোড যাতে না ভাঙে)
 
@@ -65,3 +66,20 @@ class Demo(Scene):
 ## License
 
 Use freely for your Manim projects.
+
+## Creature demo
+
+```bash
+pip install -e .
+manim -ql examples/creature_demo.py CreatureDemo
+```
+
+```python
+from my_manim_lib import CustomCreature
+
+creature = CustomCreature().scale(2.5)
+self.play(creature.get_look_animation(target.get_center()))
+close, open_ = creature.get_blink_animation()
+self.play(close)
+self.play(open_)
+```

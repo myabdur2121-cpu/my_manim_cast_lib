@@ -11,6 +11,7 @@ Custom Manim animations & mobjects.
 
 from .animations import *
 from .mobjects import *
+from .creatures import *
 
 __status__ = """
 RECOMMENDED animations:
@@ -26,6 +27,10 @@ LEGACY (still available, prefer recommended instead):
 
 MOBjects: GlowLine, GlowDot, Glow, BrightGlowDot, MultiBrightGlow,
   SmoothCross, SplitTex, SplitText, ScreenBlur, TrueGaussianBlur2
+
+Creatures:
+  CustomCreature  (SVG: assets/creature_hands_up_eyes_mouth.svg)
+  helpers: get_look_animation, get_look_forward_animation, get_blink_animation
 
 Full notes: my_manim_lib/STATUS.md
 """

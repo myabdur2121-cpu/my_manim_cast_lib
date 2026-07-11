@@ -71,3 +71,20 @@ self.play(FadeIn(blur))
 
 তাই **সব রেখে STATUS নোট** রাখা ভালো।  
 নতুন প্রজেক্টে শুধু ✅ Recommended / Keep ব্যবহার করো; ⚠️ Legacy এড়িয়ে চলো।
+
+---
+
+## Creatures
+
+| Class | Status | Advice |
+|-------|--------|--------|
+| `CustomCreature` | ✅ Keep | SVG stick figure; look-at + blink helpers |
+| Asset | — | `assets/creature_hands_up_eyes_mouth.svg` |
+
+```python
+from my_manim_lib import CustomCreature
+c = CustomCreature().scale(2)
+self.play(c.get_look_animation(some_mobject.get_center()))
+close, open_ = c.get_blink_animation()
+self.play(close); self.play(open_)
+```

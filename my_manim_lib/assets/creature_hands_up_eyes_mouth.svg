@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9fa"/>
+
+  <!-- ========== BODY (Hands Up Pose) ========== -->
+  <g id="body">
+
+    <!-- Torso -->
+    <path id="torso" d="M 200,127 L 200,207" fill="none" stroke="#2C3E50" stroke-width="19" stroke-linecap="round"/>
+
+    <!-- Left Leg -->
+    <path id="left_leg" d="M 200,207 Q 180,267 180,327" fill="none" stroke="#2C3E50" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Right Leg -->
+    <path id="right_leg" d="M 200,207 Q 220,267 220,327" fill="none" stroke="#2C3E50" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Left Arm (raised) -->
+    <path id="left_arm" d="M 200,137 Q 170,187 170,237" fill="none" stroke="#2C3E50" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Right Arm (raised) -->
+    <path id="right_arm" d="M 200,137 Q 230,187 230,237" fill="none" stroke="#2C3E50" stroke-width="18" stroke-linecap="round"/>
+
+    <!-- Head -->
+    <circle id="head" cx="200" cy="95" r="32" fill="#2C3E50" stroke="#1a252f" stroke-width="3"/>
+
+  </g>
+
+  <!-- ========== EYES + EYELIDS ========== -->
+  <g id="eyes">
+
+    <!-- Left Eye -->
+    <ellipse id="left_eye" cx="185" cy="92" rx="11" ry="7.5" fill="#ffffff" stroke="#1a252f" stroke-width="2"/>
+    <!-- Right Eye -->
+    <ellipse id="right_eye" cx="215" cy="92" rx="11" ry="7.5" fill="#ffffff" stroke="#1a252f" stroke-width="2"/>
+
+    <!-- Pupils -->
+    <circle id="left_pupil" cx="185" cy="92" r="4.5" fill="#1a252f"/>
+    <circle id="right_pupil" cx="215" cy="92" r="4.5" fill="#1a252f"/>
+
+    <!-- Left Eyelid -->
+    <ellipse id="left_eyelid" cx="185" cy="90" rx="12" ry="8" fill="#2C3E50" opacity="0"/>
+
+    <!-- Right Eyelid -->
+    <ellipse id="right_eyelid" cx="215" cy="90" rx="12" ry="8" fill="#2C3E50" opacity="0"/>
+
+  </g>
+
+  <!-- ========== MOUTH ========== -->
+  <g id="mouth">
+    <path id="mouth_path" d="M 188,113 Q 200,116.5 212,113" fill="none" stroke="#1a252f" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+</svg>
