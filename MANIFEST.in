@@ -1,4 +1,5 @@
 include README.md
+include HOW_TO_ADD_SVG.md
 include my_manim_lib/STATUS.md
 include my_manim_lib/creatures/README.md
 recursive-include my_manim_lib/assets *.svg

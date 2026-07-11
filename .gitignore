@@ -1,5 +1,6 @@
 __pycache__/
 *.py[cod]
+*$py.class
 *.egg-info/
 .eggs/
 build/
@@ -15,3 +16,7 @@ media/
 *.log
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
+partial_movie_files/
+.git-askpass.sh
+*.bak
