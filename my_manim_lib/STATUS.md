@@ -1,7 +1,7 @@
 # my_manim_lib — কোনটা ব্যবহার করবে, কোনটা সতর্ক
 
 > এই ফাইলটা লাইব্রেরির সাথেই থাকে।  
-> `pip install git+https://github.com/myabdur2121-cpu/my_manim_lib.git`  
+> `pip install git+https://github.com/myabdur2121-cpu/my_manim_cast_lib.git`  
 > করলেই ডাউনলোড হয়ে যাবে — আগে থেকে সতর্কবার্তা পাবে।
 
 সব ক্লাস **কোডে আছে এবং রান করে**। কিছু ক্লাস পুরোনো/দুর্বল/ডুপ্লিকেট —

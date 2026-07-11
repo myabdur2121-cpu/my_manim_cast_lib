@@ -5,13 +5,13 @@ Custom **Manim Community** animations & mobjects.
 ## Install
 
 ```bash
-pip install git+https://github.com/<YOUR_USER>/<YOUR_NEW_REPO>.git
+pip install git+https://github.com/myabdur2121-cpu/my_manim_cast_lib.git
 ```
 
 Force reinstall (after updates):
 
 ```bash
-pip install --force-reinstall --no-deps git+https://github.com/<YOUR_USER>/<YOUR_NEW_REPO>.git
+pip install --force-reinstall --no-deps git+https://github.com/myabdur2121-cpu/my_manim_cast_lib.git
 ```
 
 ## Quick start
